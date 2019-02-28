@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+
+\newcommand{\numpy}{{\tt numpy}}    % tt font for numpy
+
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 7in
+
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+% ========== Edit your name here
+\author{}
+\title{Gedankenprotokoll 1. Klausur Woeginger}
+\maketitle
+
+\medskip
+
+% ========== Begin answering questions here
+\begin{enumerate}
+
+\item
+Definiere die Laufzeitkosten einer RAM im logarithmischen Kostenmaß.
+
+\item
+Definiere die Laufzeitkosten einer RAM im uniformen Kostenmaß.
+
+\item
+Definiere wann eine Sprache entscheidbar ist.
+
+\item
+Definiere wann eine Sprache semi-entscheidbar ist.
+
+\item
+Definiere wann eine Sprache rekursiv aufzählbar ist.
+
+\item
+Definiere die Zertifikat-Verifizierer Charakterisierung von NP.
+
+\item
+Definiere wann eine Sprache coNP-Schwer ist.
+
+\item
+Definiere einen Drucker/Aufzähler.
+
+\item
+Definiere Subset-Sum.
+
+\item
+Zeigen Sie: Wenn eine Sprache rekursiv aufzählbar ist, so ist sie auch semi-entscheidbar.
+
+\item Gehe davon aus, dass in dem Register c(1) = m ($m \in \mathbb{N}, m \geq 0$) steht. Was steht bei Terminierung im Register c(2)?
+\begin{lstlisting}
+1. LOAD 1
+2. STORE 2
+3. LOAD 1
+4. CSUB 1
+5. STORE 1
+6. IF c(0) <= 1 GOTO 11
+7. LOAD 2
+8. MULT 1
+9. STORE 2
+10. GOTO 3
+11. END
+\end{lstlisting}
+
+\item
+Analysieren Sie die Laufzeit dieser Ram im uniformen Kostenmaß.
+
+\item
+Analysieren Sie die Laufzeit dieser RAM im logarithmischen Kostenmaß.
+
+\item Zeigen Sie, dass $\lfloor \sqrt{x} \rfloor$ primitiv rekursiv ist. Sie dürfen verwenden,
+dass mult, add, succ, [x $\leq$ y] primitiv rekursiv ist.
+
+\item Gegeben ist eine Abbildung f mit $f: \mathbb{N}^4 \xrightarrow{} \mathbb{N}, (a,b,c,d) \mapsto (a-b)^2(a-c)^2(a-d)^2$. Bestimmen Sie $\mu f$.
+
+\item Zeigen oder widerlegen Sie: Die folgenden Sprachen sind entscheidbar.\\\\
+Frage: Gegeben Sei eine Gödelnummer $\langle M \rangle$. Ex. eine TM, die alle von M akzep. Wörter rekursiv aufzählt?
+\\
+
+Frage: Gegeben Sei eine Gödelnummer $\langle M \rangle$. Ex. eine TM, die alle von M nicht akzep. Wörter rekursiv aufzählt?
+
+\item Zeigen sie $\text{EXCOVER} \leq_p \text{SAT}$
+
+\item Noch ein zwei Aufgaben zu NP-Vollständigkeit und zum zeigen, dass etwas in NP liegt (Regenschirm und Sonnenhut.
+\end{enumerate}
+
+\end{document}
+\grid
+\grid
